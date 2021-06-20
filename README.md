@@ -5,4 +5,7 @@ This internship is for Design and Analysis of Algorithm.  It is 45 days internsh
 **-Introduction of data structure and their need.**
 
 ### TASK_2
-**-Arrays**
+**-Arrays**  
+
+### TASK_3
+**-Searching**
