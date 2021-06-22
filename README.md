@@ -9,3 +9,6 @@ This internship is for Design and Analysis of Algorithm.  It is 45 days internsh
 
 ### TASK_3
 **-Searching**
+
+### TASK_4
+**-Sorting**
