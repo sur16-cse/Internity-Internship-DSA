@@ -42,19 +42,20 @@ void insert(Node* &head,int data)
     return;
 }
 
-Node* reverse(Node* &head)
-{
-    Node *pre=NULL;
-    Node *next=NULL;
 
-    while(head!=NULL)
-    {
-        next=head->link;
-        head->link=pre;
-        pre=head;
-        head=next;
+
+Node* reverse(Node* head){
+    Node* prevptr=NULL;
+    Node* currptr=head;
+    Node* nextptr;
+
+    while(currptr!=NULL){
+        nextptr=currptr->link;
+        currptr->link=prevptr;
+        prevptr=currptr;
+        currptr=nextptr;
     }
-    return pre;
+    return prevptr;
 }
 
 bool palindrome(Node* head)
@@ -67,7 +68,7 @@ bool palindrome(Node* head)
 
     
     
-    while(fast!=NULL && fast->link!=NULL)
+    while(fast->link!=NULL && fast->link->link!=NULL)
     {
         slow=slow->link;
         fast=fast->link->link;
@@ -78,11 +79,12 @@ bool palindrome(Node* head)
 
     slow=slow->link;
 
+    Node *dummy=head;
     while(slow!=NULL)
     {
-        if(head->data!=slow->data)
+        if(dummy->data!=slow->data)
             return false;
-        head=head->link;
+        dummy=dummy->link;
         slow=slow->link;
 
     }
