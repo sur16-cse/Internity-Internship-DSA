@@ -20,4 +20,7 @@ This internship is for Design and Analysis of Algorithm.  It is 45 days internsh
 **-Sorting And LinkedList**
 
 ### TASK_7
-**-Stack**
+**-Stack And Queue**
+
+### TASK_8
+**-Trees**
