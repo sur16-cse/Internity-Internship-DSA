@@ -21,7 +21,15 @@ Stack is a special kind of data structure which allwed us to insert and delete e
 2. In Recursion 
 3. Stack Memory
 4. Function call --> context switch --> previous states we save into our stack so we could retrieve all the prior states if current processing is finished.
-
+5.Backtracking--need to access most recent data element in a series of elements.
+6.Dfs
+7. parsing-syntax analysis of compiler uses stack in parsing the program
+8. web browsers stores the address of recently visited sites on a stack.
+9.Expression evaluation.
+10.Reversing a list- first push all the elements of string in stack an then pop elements.
+11.Expression conversion.
+12.tower of hanoi.
+13.computation of cycle in graph.
 
 void solve1(){
 	solve2();
