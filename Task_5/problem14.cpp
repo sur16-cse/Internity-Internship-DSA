@@ -68,7 +68,7 @@ Node* mergeRecursive(Node* &head1,Node* &head2)
    {
        if(head1==NULL)
         return head2;
-       if(l2==NULL)
+       if(head2==NULL)
         return head1;
        Node *result;
        if(head1->data<head2->data)
