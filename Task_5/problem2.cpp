@@ -7,7 +7,7 @@ void merge(int *arr,int low,int mid,int high)
     int i = low;
 	int j = mid+1;
 	int k = 0;
-    int *temp=new int[high+1];
+    int *temp=new int[high-low+1];
 
     while(i<=mid && j<=high)
     {
